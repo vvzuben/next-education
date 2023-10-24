@@ -1,0 +1,14 @@
+version: "3.5"
+services:
+  fscn-website:
+    container_name: fscn-website
+    build:
+      context: ./.docker/
+    restart: always
+    volumes:
+      - ./:/var/www/fscn-website/current
+    ports:
+      - 7090:3000
+networks:
+  default:
+    name: fscn_local

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cs {
+  margin-bottom: 40px;
+}
+
+main > section:last-child {
+  margin-bottom: 0 !important;
+  padding-bottom:0 !important;
+}
+
+@layer components {
+  .quote-left {
+    @apply before:absolute before:h-[55px] before:w-[60px] before:bg-quote;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+  }
+
+  section {
+    @apply px-[15px] lg:px-[30px]
+  }
+
+  .half-bg-pale-pink {
+    background: linear-gradient(to top, #fff 70%, #efe7e1 30%);
+  }
+  .more-than-half-bg-pale-pink {
+    background: linear-gradient(to top, #fff 50%, #efe7e1 50%);
+  }
+
+  .desktop-button {
+    @apply font-basis-grotesque-bold text-base font-bold leading-[24px] tracking-[-0.16px];
+  }
+  main > section:last-child {
+    @apply !mb-52;
+  }
+
+  main > section:last-child {
+    @apply pt-8 lg:mb-6;
+  }
+
+  .btn-primary {
+    @apply rounded-xl px-5 py-4 text-center text-base font-bold text-dark-plum;
+  }
+
+  .absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .container-spacing {
+    width: 95%;
+  }
+  .gap-page-title {
+    @apply gap-5 lg:gap-24;
+  }
+
+  .input-label {
+    @apply font-basis-grotesque-bold text-base leading-[20px];
+  }
+}

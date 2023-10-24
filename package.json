@@ -1,0 +1,50 @@
+{
+  "name": "fscn-nextjs-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.9",
+    "@types/react-dom": "18.2.4",
+    "autoprefixer": "10.4.14",
+    "embla-carousel-autoplay": "8.0.0-rc07",
+    "embla-carousel-react": "8.0.0-rc07",
+    "entities": "^4.5.0",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "formik": "^2.4.5",
+    "gsap": "^3.12.2",
+    "keen-slider": "^6.8.6",
+    "moment": "^2.29.4",
+    "next": "^13.5.3",
+    "pnpm": "^8.8.0",
+    "postcss": "8.4.24",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-loading-skeleton": "^3.3.1",
+    "react-select": "^5.7.5",
+    "react-share": "^4.4.1",
+    "react-toastify": "^9.1.3",
+    "react-use": "^17.4.0",
+    "sharp": "^0.32.6",
+    "stylelint-prettier": "^4.0.2",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.3",
+    "zod": "^3.22.2",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.10.0",
+    "prettier": "^3.0.3",
+    "sass": "^1.68.0"
+  }
+}

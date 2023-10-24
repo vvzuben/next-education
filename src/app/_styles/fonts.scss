@@ -1,0 +1,178 @@
+@tailwind components;
+@layer components {
+  @mixin headingFont {
+    @apply font-gta-light font-normal;
+  }
+
+  @mixin headingFontBold {
+    @apply font-gta-regular font-normal;
+  }
+
+  @mixin mobile-h1 {
+    @include headingFont;
+    @apply text-[40px] leading-[44px] tracking-[-1.26px];
+  }
+
+  @mixin mobile-h2 {
+    @include headingFont;
+    @apply text-[38px] leading-[42px] tracking-[-1.14px];
+  }
+
+  @mixin mobile-h3 {
+    @include headingFont;
+    @apply text-[28px] leading-[34px] tracking-[-0.28px];
+  }
+
+  @mixin mobile-h4 {
+    @include headingFontBold;
+    @apply text-[20px] leading-[26px] tracking-[-0.2px];
+  }
+
+  @mixin mobile-h5 {
+    @apply font-basis-grotesque-bold text-base font-bold leading-[26px] tracking-[-0.16px];
+  }
+
+  @mixin mobile-p {
+    @apply font-basis-grotesque-regular text-base leading-[26px] opacity-80;
+  }
+
+  @mixin mobile-p-l {
+    @apply font-basis-grotesque-regular text-base leading-[26px] opacity-80;
+  }
+
+  @mixin desktop-p-regular {
+    @apply font-basis-grotesque-regular text-base leading-[26px] opacity-50;
+  }
+
+  @mixin desktop-p-small {
+    @apply font-basis-grotesque-regular text-[13px] font-normal leading-[22px] tracking-[0.13px];
+  }
+
+  @mixin desktop-p-l {
+    @apply font-basis-grotesque-regular text-[18px] font-normal leading-[28px] tracking-[-0.16px];
+  }
+
+  @mixin desktop-h1 {
+    @include headingFont;
+    @apply text-[72px] leading-[95%] tracking-[-2.16px];
+  }
+
+  @mixin desktop-h2 {
+    @include headingFont;
+    @apply text-[52px] leading-[103.3%] tracking-[-1.56px];
+  }
+
+  @mixin desktop-h3 {
+    @include headingFont;
+    @apply text-[36px] leading-[42px] tracking-[-0.36px];
+  }
+
+  @mixin desktop-h4 {
+    @include headingFontBold;
+    @apply text-[24px] leading-[30px] tracking-[-0.24px];
+  }
+
+  @mixin desktop-h5 {
+    @apply font-basis-grotesque-bold text-[18px] font-bold leading-[28px] tracking-[-0.16px];
+  }
+
+  .mobile-h1 {
+    @include mobile-h1;
+  }
+  .mobile-h2 {
+    @include mobile-h2;
+  }
+  .mobile-h3 {
+    @include mobile-h3;
+  }
+  .mobile-h4 {
+    @include mobile-h4;
+  }
+  .mobile-h5 {
+    @include mobile-h5;
+  }
+
+  .mobile-p-l {
+    @include mobile-p-l;
+  }
+
+  .mobile-p {
+    @include mobile-p;
+  }
+
+  .desktop-p-regular {
+    @include desktop-p-regular;
+  }
+
+  .desktop-p-small {
+    @include desktop-p-small;
+  }
+
+  .desktop-p-l {
+    @include desktop-p-l;
+  }
+
+  .desktop-h1 {
+    @include desktop-h1;
+  }
+  .desktop-h2 {
+    @include desktop-h2;
+  }
+  .desktop-h3 {
+    @include desktop-h3;
+  }
+  .desktop-h4 {
+    @include desktop-h4;
+  }
+  .desktop-h5 {
+    @include desktop-h5;
+  }
+
+  @media (max-width: 1024px) {
+    .content h1 {
+      @include mobile-h1;
+    }
+    .content h2 {
+      @include mobile-h2;
+    }
+    .content h3 {
+      @include mobile-h3;
+    }
+    .content h4 {
+      @include mobile-h4;
+    }
+    .content h5 {
+      @include mobile-h5;
+    }
+    .content p {
+      @include mobile-p;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content h1 {
+      @include desktop-h1;
+      @apply relative -left-1 pb-3;
+    }
+    .content h2 {
+      @include desktop-h2;
+      @apply pb-3;
+    }
+    .content h3 {
+      @include desktop-h3;
+      @apply pb-3;
+    }
+    .content h4 {
+      @include desktop-h4;
+      @apply pb-3;
+    }
+    .content h5 {
+      @include desktop-h5;
+      @apply pb-3;
+    }
+
+    .content p {
+      @include desktop-p-regular;
+    }
+  }
+}
